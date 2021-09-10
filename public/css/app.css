@@ -6119,14 +6119,60 @@ body {
 }
 
 header {
-  background-image: url("../images/banner.jpg");
+  background-image: url("../images/banner.png");
   background-attachement: fixed;
   height: 100vh;
   color: white;
+  text-align: center;
 }
 header nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+header nav p {
+  text-transform: uppercase;
+}
+header nav p span {
+  font-weight: bolder;
+}
+header nav div {
+  display: flex;
+}
+header nav div a {
+  text-decoration: none;
+  margin: 0 10px;
+  margin-top: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+header .titre1 {
+  text-transform: uppercase;
+  margin-top: 150px;
+  align-items: center;
+}
+header .titre1 h1 {
+  justify-content: center;
+  padding: 20px 0;
+}
+header .titre1 p {
+  text-align: center;
+}
+header .titre1 button {
+  background-color: red;
+  color: white;
+  padding: 10px 15px;
+  padding-border-radius: 5px;
+  padding-border: solid 2px;
+}
+
+@media screen and (max-width: 620px) {
+  nav {
+    text-align: center;
+    flex-direction: column;
+  }
+  nav div {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
