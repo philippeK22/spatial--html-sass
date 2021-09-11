@@ -6131,6 +6131,8 @@ header nav {
 }
 header nav p {
   text-transform: uppercase;
+  margin: 0 20px;
+  margin-top: 40px;
 }
 header nav p span {
   font-weight: bolder;
@@ -6140,8 +6142,8 @@ header nav div {
 }
 header nav div a {
   text-decoration: none;
-  margin: 0 10px;
-  margin-top: 20px;
+  margin: 0 20px;
+  margin-top: 40px;
   color: white;
   text-transform: uppercase;
 }
@@ -6158,7 +6160,7 @@ header .titre1 p {
   text-align: center;
 }
 header .titre1 button {
-  background-color: red;
+  background-color: #F32853;
   color: white;
   padding: 10px 15px;
   padding-border-radius: 5px;
@@ -6172,6 +6174,45 @@ header .titre1 button {
   }
   nav div {
     justify-content: center;
+  }
+}
+/*section1*/
+section {
+  background-color: #FFFFFF;
+  display: flex;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  justify-content: center;
+}
+section .sect-1 {
+  flex: 1;
+}
+section .sect-1 h2 {
+  color: balck;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 35px;
+  margin-left: 30px;
+}
+section .sect-1 p {
+  color: #AAAAAA;
+  margin-left: 30px;
+}
+section .paragraphe {
+  flex: 1;
+  color: #AAAAAA;
+}
+section .paragraphe p {
+  width: 50%;
+}
+
+@media screen and (max-width: 620px) {
+  section {
+    display: inline-block;
+  }
+  section .paragraphe {
+    display: flex;
   }
 }
 
